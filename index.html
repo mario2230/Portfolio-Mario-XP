@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mario XP — Portfólio</title>
+  <meta name="description" content="Portfólio interativo de Mario Gonçalves de Freitas Junior, desenvolvedor full-stack." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="desktop" aria-label="Área de trabalho do portfólio Mario XP">
+    <div class="desktop-glow"></div>
+    <button class="welcome-badge" id="welcome-badge" aria-label="Reabrir apresentação">
+      <span class="status-dot"></span>
+      <span>mario-xp.exe</span>
+      <span class="badge-muted">online</span>
+    </button>
+
+    <section class="desktop-icons" aria-label="Programas principais do computador">
+      <button class="desktop-icon" data-window="about-window"><span class="icon-art my-computer">▣</span><span>Meu computador</span></button>
+      <button class="desktop-icon" data-window="skills-window"><span class="icon-art globe">◉</span><span>Internet Explorer</span></button>
+      <button class="desktop-icon" data-window="projects-window"><span class="icon-art folder">▰</span><span>Meus projetos</span></button>
+      <button class="desktop-icon" data-window="contact-window"><span class="icon-art mail">✉</span><span>Outlook Express</span></button>
+      <a class="desktop-icon" href="cv.pdf" target="_blank"><span class="icon-art cv">▤</span><span>Currículo.pdf</span></a>
+      <a class="desktop-icon" href="https://github.com/mario2230" target="_blank"><span class="icon-art github">◈</span><span>Meu GitHub</span></a>
+    </section>
+
+    <section class="hero-copy" id="welcome-popup" role="dialog" aria-label="Apresentação inicial">
+      <div class="popup-bar"><span><span class="popup-dot"></span> mario-xp.exe — apresentação</span><button class="hero-close" id="hero-close" aria-label="Fechar apresentação">×</button></div>
+      <div class="popup-body"><p class="eyebrow">PORTFÓLIO PESSOAL // VERSÃO 2.0</p>
+      <h1>Olá, eu sou<br><span>Mario Junior.</span></h1>
+      <p class="hero-description">Desenvolvedor full-stack em formação, transformando ideias em APIs, apps mobile e experiências digitais que funcionam de verdade.</p>
+      <button class="start-tour" data-window="about-window">Explorar computador <span>→</span></button>
+      <div class="popup-tip"><span class="note-pin">●</span><p>Dica: abra os ícones<br>para navegar pelo portfólio.</p></div>
+      </div>
+    </section>
+
+    <div class="window-stack">
+      <section class="xp-window about-window" id="about-window" data-title="Meu computador" hidden>
+        <div class="window-titlebar"><span><span class="title-icon">▣</span> Meu computador</span><div class="window-controls"><button data-action="minimize">_</button><button data-action="maximize">□</button><button data-action="close">×</button></div></div>
+        <div class="window-toolbar"><span>Arquivo</span><span>Editar</span><span>Exibir</span><span>Favoritos</span><span>Ferramentas</span><span>Ajuda</span></div>
+        <div class="window-content about-content">
+          <div class="profile-panel"><div class="avatar">MJ</div><div><p class="panel-kicker">USUÁRIO PRINCIPAL</p><h2>Mario Gonçalves<br>de Freitas Junior</h2><p>Desenvolvedor Full-Stack</p></div></div>
+          <div class="content-columns"><div><h3>Sobre mim</h3><p>Sou estudante técnico em Informática para Internet pelo SENAC e gosto de construir soluções completas: do banco de dados à interface final.</p><p>Tenho interesse especial por arquitetura de backend, aplicações mobile com Ionic/Vue e produtos que tornam tarefas complexas mais simples.</p></div><div class="specs"><h3>Informações do sistema</h3><p><strong>Localização:</strong> Brasil</p><p><strong>Formação:</strong> Técnico em Informática</p><p><strong>Foco:</strong> APIs, Mobile &amp; Frontend</p><p><strong>Status:</strong> aberto a oportunidades</p></div></div>
+        </div>
+      </section>
+
+      <section class="xp-window projects-window" id="projects-window" data-title="Meus projetos" hidden>
+        <div class="window-titlebar"><span><span class="title-icon">▰</span> Meus projetos</span><div class="window-controls"><button data-action="minimize">_</button><button data-action="maximize">□</button><button data-action="close">×</button></div></div>
+        <div class="window-toolbar"><span>Arquivo</span><span>Editar</span><span>Exibir</span><span>Favoritos</span><span>Ferramentas</span><span>Ajuda</span></div>
+        <div class="window-address"><span>Endereço</span><div>C:\\Users\\Mario\\Meus projetos</div><button>Ir</button></div>
+        <div class="window-content projects-content"><div class="section-intro"><div><p class="panel-kicker">PASTA // PROJETOS EM DESTAQUE</p><h2>O que eu já construí</h2></div><span class="item-count">4 itens</span></div><div class="project-grid">
+          <article class="project-card featured"><div class="project-icon promptpi">✦</div><div class="project-info"><div class="project-heading"><h3>PromptPi Revive</h3><span class="project-status">NOVO</span></div><p>Criador e gerenciador de prompts com IA, autenticação, favoritos e histórico.</p><div class="tech-row"><span>Ionic</span><span>Vue 3</span><span>Firebase</span><span>Capacitor</span></div><div class="project-actions"><a href="https://github.com/mario2230/PromptPi-Revive" target="_blank">Ver GitHub ↗</a><a class="subtle-link" href="https://github.com/mario2230/PrompPIRevive-backend-main" target="_blank">Backend ↗</a></div></div></article>
+          <article class="project-card"><div class="project-icon api">⌁</div><div class="project-info"><h3>API de Alertas de Bairros</h3><p>Sistema geolocalizado para eventos e alertas urbanos com notificações por CEP.</p><div class="tech-row"><span>Node.js</span><span>MySQL</span><span>JWT</span></div><a href="https://github.com/mario2230/API" target="_blank">Ver repositório ↗</a></div></article>
+          <article class="project-card"><div class="project-icon events">▦</div><div class="project-info"><h3>EventosSmart App</h3><p>Aplicativo mobile para gestão de eventos locais com interface intuitiva.</p><div class="tech-row"><span>Ionic 8</span><span>Vue 3</span><span>TypeScript</span></div><a href="https://github.com/mario2230/EventosSmart-1" target="_blank">Ver repositório ↗</a></div></article>
+          <article class="project-card"><div class="project-icon tasks">✓</div><div class="project-info"><h3>Task Manager Ionic</h3><p>App de produtividade com persistência de dados e UI otimizada para mobile.</p><div class="tech-row"><span>Ionic</span><span>Capacitor</span><span>Vue</span></div><a href="https://github.com/mario2230/Lista_de_tarefas_ionic" target="_blank">Ver repositório ↗</a></div></article>
+        </div></div>
+      </section>
+
+      <section class="xp-window skills-window" id="skills-window" data-title="Internet Explorer" hidden>
+        <div class="window-titlebar"><span><span class="title-icon">◉</span> Internet Explorer</span><div class="window-controls"><button data-action="minimize">_</button><button data-action="maximize">□</button><button data-action="close">×</button></div></div>
+        <div class="window-toolbar"><span>Voltar</span><span>Avançar</span><span>Atualizar</span><span>Página inicial</span></div>
+        <div class="browser-address"><span>Endereço</span><div>http://mario.dev/skills</div><button>Ir</button></div>
+        <div class="window-content skills-content"><p class="panel-kicker">PÁGINA DA WEB // STACK</p><h2>Minhas habilidades</h2><p class="browser-lead">Ferramentas que uso para transformar uma ideia em produto.</p><div class="skill-list"><div><span>BACKEND</span><strong>Node.js · Express · PHP · JWT · bcrypt</strong></div><div><span>FRONTEND</span><strong>Vue 3 · Vite · HTML5 · CSS3 · TypeScript</strong></div><div><span>MOBILE</span><strong>Ionic 8 · Capacitor · Firebase</strong></div><div><span>DADOS &amp; QUALIDADE</span><strong>MySQL · Cypress · Vitest · Git · Composer</strong></div></div></div>
+      </section>
+
+      <section class="xp-window contact-window" id="contact-window" data-title="Outlook Express" hidden>
+        <div class="window-titlebar"><span><span class="title-icon">✉</span> Outlook Express</span><div class="window-controls"><button data-action="minimize">_</button><button data-action="maximize">□</button><button data-action="close">×</button></div></div>
+        <div class="window-toolbar"><span>Arquivo</span><span>Editar</span><span>Exibir</span><span>Mensagem</span><span>Ajuda</span></div>
+        <div class="window-content contact-content"><div class="mail-header"><span class="icon-art mail large">✉</span><div><p class="panel-kicker">CAIXA DE ENTRADA // CONTATO</p><h2>Vamos conversar?</h2></div></div><p>Estou disponível para novos projetos, colaborações e oportunidades de aprendizado.</p><div class="contact-links"><a href="mailto:mario.defreitasjr@gmail.com"><span>✉</span> mario.defreitasjr@gmail.com</a><a href="tel:+5547988962224"><span>☎</span> +55 47 98896-2224</a><a href="https://github.com/mario2230" target="_blank"><span>◈</span> github.com/mario2230</a></div></div>
+      </section>
+    </div>
+
+    <footer class="taskbar"><button class="start-button" id="start-button"><span class="windows-logo"><i></i><i></i><i></i><i></i></span> iniciar</button><div class="taskbar-tasks" id="taskbar-tasks"></div><div class="system-tray"><span>◉</span><span>⌁</span><span id="clock">00:00</span></div></footer>
+    <aside class="start-menu" id="start-menu" hidden><div class="start-header"><div class="mini-avatar">MJ</div><strong>Mario Junior</strong></div><div class="start-body"><div class="start-column"><button data-window="about-window"><span>▣</span> Meu computador</button><button data-window="projects-window"><span>▰</span> Meus projetos</button><button data-window="skills-window"><span>◉</span> Internet Explorer</button><button data-window="contact-window"><span>✉</span> Outlook Express</button></div><div class="start-column secondary"><a href="cv.pdf" target="_blank"><span>▤</span> Meu currículo</a><a href="https://github.com/mario2230" target="_blank"><span>◈</span> GitHub</a><p class="start-tip">“Construir, testar,<br>aprender e repetir.”</p></div></div><div class="start-footer"><span>Desligar</span><span class="power">⏻</span></div></aside>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
